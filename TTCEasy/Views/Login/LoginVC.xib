@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="TTCEasy" customModuleProvider="target">
+            <connections>
+                <outlet property="tfPassword" destination="QpE-Uy-DN2" id="ReB-2K-yWf"/>
+                <outlet property="tfUsername" destination="uAj-tm-9S5" id="WPf-ta-Iks"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="HMZ-Zb-YUJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Kq-Zu-Cvv">
+                    <rect key="frame" x="50" y="234" width="220" height="100"/>
+                    <subviews>
+                        <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Tên đăng nhập" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uAj-tm-9S5">
+                            <rect key="frame" x="0.0" y="0.0" width="220" height="45"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ggC-EZ-hGr"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Mật khẩu" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QpE-Uy-DN2">
+                            <rect key="frame" x="0.0" y="55" width="220" height="45"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ZrN-nC-HCK"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_ttc" translatesAutoresizingMaskIntoConstraints="NO" id="1at-sy-6kq">
+                    <rect key="frame" x="60" y="64" width="200" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="C0c-pF-QeD"/>
+                        <constraint firstAttribute="height" constant="150" id="pfk-yB-koX"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxS-Sf-Rgq">
+                    <rect key="frame" x="60" y="350" width="200" height="35"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.50196078431372548" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="IWu-X5-Guv"/>
+                        <constraint firstAttribute="width" constant="200" id="fMO-dh-j6P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                    <state key="normal" title="ĐĂNG NHẬP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="c0T-Dj-TVa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-CY-LuO">
+                    <rect key="frame" x="60" y="393" width="200" height="27"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                    <state key="normal" title="Quên mật khẩu?">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="9Kq-Zu-Cvv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5wC-cR-OGi"/>
+                <constraint firstItem="RxS-Sf-Rgq" firstAttribute="top" secondItem="9Kq-Zu-Cvv" secondAttribute="bottom" constant="16" id="AP9-hh-zDT"/>
+                <constraint firstItem="ELi-CY-LuO" firstAttribute="leading" secondItem="RxS-Sf-Rgq" secondAttribute="leading" id="Al1-gv-vEE"/>
+                <constraint firstAttribute="trailing" secondItem="HMZ-Zb-YUJ" secondAttribute="trailing" id="FSI-pK-UeB"/>
+                <constraint firstItem="HMZ-Zb-YUJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IEq-fW-Y60"/>
+                <constraint firstItem="ELi-CY-LuO" firstAttribute="trailing" secondItem="RxS-Sf-Rgq" secondAttribute="trailing" id="U0F-wk-JMG"/>
+                <constraint firstItem="9Kq-Zu-Cvv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="WmH-Yq-4NI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Kq-Zu-Cvv" secondAttribute="trailing" constant="50" id="ZCB-em-zOY"/>
+                <constraint firstItem="9Kq-Zu-Cvv" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="bTw-Ak-973"/>
+                <constraint firstItem="9Kq-Zu-Cvv" firstAttribute="top" secondItem="1at-sy-6kq" secondAttribute="bottom" constant="20" id="dpO-NK-8od"/>
+                <constraint firstAttribute="bottom" secondItem="HMZ-Zb-YUJ" secondAttribute="bottom" id="hOQ-Hm-pLw"/>
+                <constraint firstItem="ELi-CY-LuO" firstAttribute="top" secondItem="RxS-Sf-Rgq" secondAttribute="bottom" constant="8" id="q5I-C6-RSv"/>
+                <constraint firstItem="RxS-Sf-Rgq" firstAttribute="centerX" secondItem="HMZ-Zb-YUJ" secondAttribute="centerX" id="rhw-6V-QEW"/>
+                <constraint firstItem="HMZ-Zb-YUJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ysZ-nH-iHk"/>
+                <constraint firstItem="1at-sy-6kq" firstAttribute="centerX" secondItem="HMZ-Zb-YUJ" secondAttribute="centerX" id="zHN-Tv-Pra"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="119"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="812"/>
+        <image name="logo_ttc" width="288" height="154"/>
+    </resources>
+</document>

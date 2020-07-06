@@ -1,0 +1,6 @@
+framework module Pods_TTCEasy {
+  umbrella header "Pods-TTCEasy-umbrella.h"
+
+  export *
+  module * { export * }
+}

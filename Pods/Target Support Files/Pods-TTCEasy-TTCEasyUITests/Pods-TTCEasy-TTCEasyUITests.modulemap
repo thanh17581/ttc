@@ -1,0 +1,6 @@
+framework module Pods_TTCEasy_TTCEasyUITests {
+  umbrella header "Pods-TTCEasy-TTCEasyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
